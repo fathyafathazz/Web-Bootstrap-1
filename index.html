@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Web menggunakan bootstrap</title>
+    <style type="text/css">@font-face {
+      font-family: 'halimunregular';
+      src: url('halimun-w7jn-webfont.woff2') format('woff2'),
+           url('halimun-w7jn-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;}
+      .halimunregular {font-family: 'halimunregular';} </style>
+    <script src="https://kit.fontawesome.com/1ef1772957.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #F5E8C7;">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#home"><div class="halimunregular" style="color:#b9005b;"><span class="fw-bold"><h1>F Choice</h1></span></div></a>
+        <button class="navbar-toggler navbar-tooggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#kategori" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu active">
+                <li><a class="dropdown-item" href="#outfit">Outfit</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#clothes">Clothes</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#bags">Bags</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#footware">Footware</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 bg-transparent" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-blue" style="color:#b9005b;" type="submit"><i class="fa-2x fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <ul class="navbar-nav ml-auto" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#keranjang"><i class="fa-2x fa-solid fa-heart"></i></a></li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#akun"><i class="fa-2x fa-solid fa-user"></i></a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1529528744093-6f8abeee511d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="height: 759px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-inline" style="padding-bottom: 200px;">
+        <h1 class="display-4"><div class="halimunregular" style="color:#b9005b;"><span class="fw-bold">F Choice</span></div></h1>
+        <p class="lead">-Make Your Fashion Fabulous-</p>
+        <p>Find Your Inspiration Now</p>
+        <a class="btn btn-primary btn-lg" href="#outfit" role="button">Get Started</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/01outfit.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-grid d-md-block" style="padding-bottom: 530px;">
+        <h5 style="font-size: 70px; color:#b9005b;"><div class="halimunregular"><span class="fw-bold">Outfit</span></div></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/02clothes.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" style="padding-bottom: 500px;">
+        <h5 style="font-size: 70px; color:#b9005b;"><div class="halimunregular"><span class="fw-bold">Clothes</span></div></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/03bags.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" style="padding-bottom: 500px;">
+        <h5 style="font-size: 70px;color:#b9005b;"><div class="halimunregular"><span class="fw-bold">Bags</span></div></h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/04footware.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" style="padding-bottom: 500px;">
+        <h5 style="font-size: 70px;color:#b9005b;"><div class="halimunregular"><span class="fw-bold">Footware</span></div></h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </section>
+    <!-- outfit -->
+    <section id="outfit">
+      <div class="row row-cols-1 row-cols-md-4 g-4 ms-0 me-0" style=" padding-top: 5%;">
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/e3/24/f7/e324f737857da2ed7b7d47bd3a628257.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/61/00/6e/61006e0c555f69999db7890cf96d8a8a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/3b/b7/b9/3bb7b9dfc25189f7c7e7b65485b8f6dc.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/c7/83/76/c78376468d1375c70db3f7a02ea443d0.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/57/c0/b8/57c0b896fd037a7c1174aad10d6e7736.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/5f/21/81/5f2181dfad46ea2d89257f49308f77e1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/84/bd/9c/84bd9cbb12c09f33ed5196e59545344a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/b6/38/8a/b6388a02197450b30c02554a54b0e946.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/65/ec/73/65ec732f8875ba8cd70204cd85571846.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/b7/2f/7d/b72f7d128bff3bc4102ce1086b7da250.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/ea/e3/af/eae3af931c4cf312b8cca90f6a8e9339.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/de/88/eb/de88eb815f1f0999ce77985ddc8b7e34.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/82/5b/eb/825beb56931a4803dad4e5359459f64b.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/9e/2f/8f/9e2f8f02df9a7a99be91b837042a6fe6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/14/b3/37/14b337f1a3db90ba1a634f7b25592107.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/9b/b0/ae/9bb0ae4c08b39d3de7aa76009d6eeae4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- clothes -->
+    <section id="clothes">
+      <div class="row row-cols-1 row-cols-md-4 g-4 ms-0 me-0" style=" padding-top: 5%;">
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/62/70/f0/6270f06ffbe20447bda5ba66f95525d9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/5d/8e/34/5d8e34f237cc98015a86bddeeb2b230f.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/8c/d2/17/8cd217fff4fbc2535a4d48e3c4231cfb.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/03/f5/b7/03f5b7d3671d43885495d2126f797d1f.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/0d/2b/de/0d2bde15d7d7fe7908ebcd10b80fb24e.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/1d/b9/ab/1db9abec7ad11af2beb73e30451cab37.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/29/29/16/2929163ef635fafa3b65ca38757fad1d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/86/61/0c/86610ce370c6132a42022745ca2313ff.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/bf/ba/fe/bfbafe0e1271a0717ed04951212ae029.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/fc/2b/2a/fc2b2adf089051aea2f1c30072fb4d67.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/45/a5/43/45a543ea92cb0d6e1574db566f6fac03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/8e/8f/4c/8e8f4ceb7add7ea091fe520ff1b12be4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/26/d6/a1/26d6a1fb2b2de38dde1a72d3b20309a0.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/32/aa/3f/32aa3fcc4367d48735c101d52e101f21.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/ac/05/42/ac05423862d3ce2ac7b05befe4772126.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/65/b8/bf/65b8bf548f082e4205a07275523c0f10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bags -->
+    <section id="bags">
+      <div class="row row-cols-1 row-cols-md-4 g-4 ms-0 me-0" style=" padding-top: 5%;">
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/62/5c/d7/625cd7e784a688bd76ab2b9d0915df19.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/91/05/8a/91058ada7aabe6d34184b07a9b527764.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/78/c5/53/78c553867d970d5399c52bf072619498.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/b0/77/b3/b077b35c2c2422f4d241a0d0153683c0.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/31/69/5c/31695c85540e5f8627ac03ccdbe3f158.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/30/ce/93/30ce939ced4865f4c302bf71cb422c4a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/aa/55/2e/aa552ef1154e19666f17258c1f7e1d3b.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/9b/b2/97/9bb2972a521b3e9bb74e5e97b1d48dfd.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/f3/b7/ec/f3b7ec7a9473f4ddb4b88c6dfb6beee4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/0c/c4/0a/0cc40a414de4cd18f063a8d2b6695b3e.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/0e/8d/e3/0e8de31b721f646af71d6ea50460e267.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/1e/19/32/1e1932d400812a089fd486d518fa4389.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/ad/66/8e/ad668ef59785c907ee6899e2c35ed8ba.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/45/0d/cc/450dccd4448e4ebb8154f6f04394ddff.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/df/2e/d3/df2ed37f635bd5f4f769a6f2a3c5a0ab.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/de/97/54/de9754bfc4acd28e8efe426fb59c5869.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footware -->
+    <section id="footware">
+      <div class="row row-cols-1 row-cols-md-4 g-4 ms-0 me-0" style=" padding-top: 5%;">
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/a9/af/b7/a9afb7f7f2fd45739d34a8803b400dc7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/f1/2a/e4/f12ae476b12a94440c800ff1478b39c8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/07/91/5e/07915e3ed5aba180e82b3193d8bdeaf0.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/7a/1c/6b/7a1c6be3d856d0846334df3e3015d795.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/46/e0/ba/46e0baeecea3e8fa6ff3395214c806fa.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/39/fa/af/39faafa68c09e7ff8748b48a59319140.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/d4/1b/07/d41b07319b4575b10b17d859579dadb0.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/a8/fa/e6/a8fae6505b135a0e1942e4beffea438a.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/c2/18/53/c2185347cfd96ca2c086e27d02fa49cf.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/45/bf/0d/45bf0d62bf0567c41906890894e99543.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/4b/ff/b0/4bffb08b21d10f2fbc6165c4271fe8c9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/da/36/e6/da36e63542c86343188d4529ffa3d8e3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+        <!-- break -->
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/b8/67/1d/b8671da3d352ba2814c6efa9a37e5904.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/aa/fb/ea/aafbea11be04b3544557e864155fa29c.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/62/cd/32/62cd32d47635d9804d1aa596992afd03.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/cd/29/a1/cd29a11aa0f4a6fb7d9e9785ffa5f7c3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <i class="fa-2x fa-regular fa-heart float-end"></i>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- js code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
